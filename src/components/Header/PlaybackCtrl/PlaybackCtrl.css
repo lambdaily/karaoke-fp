@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--container-padding);
+}
+
+.btn {
+  cursor: pointer;
+  fill: var(--transport-btn-bg-color);
+  filter: var(--transport-btn-filter);
+}
+
+.play {
+  composes: btn;
+}
+
+.pause {
+  composes: btn;
+}
+
+.next {
+  composes: btn;
+  margin-left: 7px;
+}
+
+.restart {
+  composes: btn;
+  margin-left: 7px;
+  fill: var(--btn-active-bg-color);
+}
+
+.displayCtrl {
+  composes: btn;
+  fill: var(--btn-active-bg-color);
+}
+
+.fullscreen {
+  composes: btn;
+  fill: var(--btn-active-bg-color);
+}

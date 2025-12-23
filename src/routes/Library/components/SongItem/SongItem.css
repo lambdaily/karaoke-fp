@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.containerQueued {
+  composes: container;
+  color: var(--queued-item-color);
+  text-shadow: var(--queued-item-text-shadow);
+}
+
+.animateGlow {
+  animation: var(--animation-text-shadow-glow);
+}
+
+.duration {
+  color: #888;
+  font-size: 12px;
+  text-align: center;
+  width: 44px;
+}
+
+.primary {
+  cursor: pointer;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: var(--btn-margin);
+}
+
+.title {
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.artist {
+  color: #aaa;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Buttons */
+.btn {
+  cursor: pointer;
+  width: var(--song-item-btn-width);
+  height: var(--song-item-btn-height);
+  margin-right: var(--btn-margin);
+  transition: opacity .3s;
+}
+
+.star {
+  fill: var(--song-item-btn-bg-color);
+  height: var(--song-item-btn-height);
+}
+
+.starStarred {
+  fill: var(--song-item-btn-active-bg-color);
+  filter: var(--song-item-btn-active-filter);
+}
+
+.starCount {
+  position: relative;
+  font-size: 13px;
+  top: -28px;
+  text-align: center;
+  text-shadow: none;
+  color: var(--text-color);
+}
+
+.starCountStarred {
+  composes: starCount;
+  color: var(--song-item-btn-active-color);
+}
+
+.animateStar {
+  animation: var(--animation-bounce);
+}
+
+.info {
+  fill: var(--song-item-btn-active-bg-color);
+}

@@ -1,0 +1,33 @@
+.container {
+  top: var(--container-padding);
+  background-color: var(--panel-bg-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.title {
+  background-color: var(--panel-title-bg-color);
+  font: var(--panel-title-font);
+  margin: 0;
+  padding: var(--panel-title-padding);
+}
+
+.content {
+  padding: var(--container-padding);
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sm {
+  color: #aaa;
+  font-size: 75%;
+  margin-top: .5em;
+}
+
+.pseudolink {
+  text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+.container {
+  font-family: var(--font-family-custom);
+  white-space: nowrap;
+  flex: 1;
+}
+
+.imgMic {
+  margin: 0;
+  width: 1.75em;
+}
+
+.title {
+  border: none;
+  color: hsl(var(--hue-blue), 10%, 80%);
+  display: inline-block;
+  font-weight: 200;
+  font-size: 100%;
+  margin: 0;
+  text-shadow: var(--text-shadow-glow);
+  position: relative;
+  left: -.66em;
+}
+
+.forever {
+  font-weight: 700;
+}
+
+.nospace {
+  font-size: 0;
+}

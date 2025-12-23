@@ -1,0 +1,50 @@
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.textContainer {
+  background-color: var(--chrome-bg-color);
+  border-radius: 0 0 0 var(--border-radius);
+  text-align: center;
+  padding: 20px;
+}
+
+@supports (backdrop-filter: saturate(50%) blur(20px)) or (-webkit-backdrop-filter: saturate(50%) blur(20px)) {
+  .textContainer {
+    background-color: transparent !important;
+    -webkit-backdrop-filter: saturate(50%) blur(20px);
+    backdrop-filter: saturate(50%) blur(20px);
+  }
+}
+
+.fadeEnter {
+  opacity: 0.01;
+}
+
+.fadeEnterActive {
+  composes: fadeEnter;
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fadeExit {
+  opacity: 1;
+}
+
+.fadeExitActive {
+  composes: fadeExit;
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+
+.user {
+  font-size: 6vh;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0px 3px 5px #000;
+}
+
+.userImage {
+  height: 20vh;
+}
